@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+
 body{
  
   
@@ -16,7 +18,7 @@ body{
     display: flex;
     align-items: center;
     padding: 10px;
-    margin-left: 950px;
+    margin-left: 880px;
     
 }
 .menu ul {
@@ -26,10 +28,19 @@ body{
 .menu ul li{
     list-style: none;
     padding: 10px;
+    font-family:"poppins",sans-serif;
 }
 /* home page*/
 .Home img{
     width: 100%;
     z-index: -1;
     margin-top: -200px;
+}
+.Home_item h2{
+    font-family: "Times New Roman, Times, serif";
+    font-size:3rem;  
+}
+.Home .Home_item{
+    margin-left: 20px;
+    margin-top: 90px;
 }
