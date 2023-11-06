@@ -1,42 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+   body{
+        background-image: url('img/new.jpg');
+        background-size: cover;
+        background-attachment: fixed; /* Optional, to make the background fixed while scrolling */
+    }
+    .nav_bar{
+        display: flex;
+       
+        align-items: center;
+        
+    }
+    .nav_logo img{
+        margin-bottom: -20px;
+       
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-left: 880px;
+        
+    }
+    .menu ul {
+        display: flex;
+        
+    }
+    .menu ul li{
+        list-style: none;
+        padding: 10px;
+        font-family:"poppins",sans-serif;
+    }
+    /* home page*/
 
-body{
- 
-  
-
-}
-.nav_bar{
-    display: flex;
-    margin-top: -800px;
-    align-items: center;
-    z-index: 1;
-}
-.nav_logo img{
-    margin-bottom: -20px;
-    z-index: -1;
-}
-.menu{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin-left: 880px;
-    
-}
-.menu ul {
-    display: flex;
-    
-}
-.menu ul li{
-    list-style: none;
-    padding: 10px;
-    font-family:"poppins",sans-serif;
-}
-/* home page*/
-.Home img{
-    width: 100%;
-    z-index: -1;
-    margin-top: -200px;
-}
 .Home_item h2{
     font-family: "Times New Roman, Times, serif";
     font-size:3rem;  
@@ -54,6 +49,7 @@ body{
   justify-content:space-evenly;
   margin-left: -50px;
   margin-top: 150px;
+  background-color: rgba(255, 255, 255, 0.177);
  
 }
 
