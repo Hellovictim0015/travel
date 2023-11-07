@@ -1,0 +1,14 @@
+/* Default styling for larger screens */
+.home{
+    background-image: url('img/new.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 768px) {
+    .home_b{
+        background-image: url('path/to/your-mobile-image.jpg');
+        /* Additional mobile-specific styles */
+    }
+}
