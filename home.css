@@ -1,14 +1,22 @@
-/* Default styling for larger screens */
-.home{
-    background-image: url('img/new.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+/* Apply styles to the slider container */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
 }
 
-/* Adjust for smaller screens */
-@media screen and (max-width: 768px) {
-    .home_b{
-        background-image: url('path/to/your-mobile-image.jpg');
-        /* Additional mobile-specific styles */
-    }
+/* Style the individual slides */
+.slide {
+    display: none;
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
 }
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style the navigation buttons if you want to add them */

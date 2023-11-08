@@ -4,22 +4,20 @@
   padding: 0;
 }   
 .home{
-        background-image: url('img/new.jpg');
-        background-repeat: no-repeat;
-        height: 100vh;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        
-    }
-    .nav_bar{
+margin-top: -800px;
+}   
+.nav_bar{
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        z-index: 1;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.056);
+        border-radius: 6px;
+        background-color: white;   
     }
     .nav_logo img{
         margin-bottom: -10px;
+        margin-right: 30px;
        
     }
     .menu{
@@ -40,12 +38,14 @@
     }
     .nav_btn{
         display: flex;
-        padding: 10px;
+       
+       
     }
     .nav_btn button{
         border-radius: 5px;
         background-color: transparent;
         width: 90px;
+        margin: 4px;
         height: 33px;
         font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
@@ -69,7 +69,10 @@
 }
    .Home_item{
     margin-left: 60px;
-    margin-top: 200px;
+    margin-top: 150px;
+    color: white;
+    
+    
 }
 /*  bookin css */
 .Booking_form{
@@ -78,11 +81,14 @@
   display: flex;
   padding:35px;
   justify-content:space-evenly;
-  margin-top: 125px;
   margin-left: 45px;
+  margin-top: 250px;
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.362);
  
+}
+.Booking_form:hover{
+  background-color: rgba(0, 0, 0, 0.24);
 }
 .book_m{
     margin-top: -10px;
@@ -103,76 +109,73 @@
     border-radius: 4px;
     border-style: none;
 }
+/* Apply styles to the slider container */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+/* Style the individual slides */
+.slide {
+  display: none;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style the navigation buttons if you want to add them */
 
 
-
-
-
-
-
-.swiper-slide {
-    width: 300px;
-    height: 400px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-    filter: blur(1px);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: self-start;
+@media(min-width: 480px) {
+    .nav_bar{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 7vh;
+      z-index: 1;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.056);
+      border-radius: 6px;
+      background-color:white;   
+     
   }
-  .swiper-slide span {
-    text-transform: uppercase;
-    color: #fff;
-    background: #1b7402;
-    padding: 7px 18px 7px 25px;
-    display: inline-block;
-    border-radius: 0 20px 20px 0px;
-    letter-spacing: 2px;
-    font-size: 0.8rem;
-    font-family: "Open Sans", sans-serif;
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
   }
-  
-  .swiper-slide--one span {
-    background: #62667f;
-  }
-  .swiper-slide h2 {
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 1.4;
-    margin-bottom: 15px;
-    padding: 25px 45px 0 25px;
-  }
-  
-  .swiper-slide p {
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    padding: 0 25px 35px 25px;
-  }
-  .swiper-slide--one {
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      url(img/photo.jpg)
-        no-repeat 50% 50% / cover;
-        filter: blur();
-  }
-  @media only screen and (min-width: 481px) and (max-width: 481px)  {
-    .home{
-      background-image: url('img/new.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      
+  .Booking_form{
+    width: 90%;
+    height: auto;
+    padding:35px;
+    justify-content:space-evenly;
+    margin-left: 45px;
+    margin-top: 250px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.362);
   }
   .menu{
-    list-style: none;
-    padding: 10px;
-    font-family:"poppins",sans-serif;
-    display: none;
-}
+    margin-top: 100px;
+    margin-left: -60px;
+    background-color: orange;
+    width: 100%;
+    height: 30%;
+    
+  }
+  .nav_btn{
+   margin-left: -60px;
+   margin-top: -100px;
+  }
+  .nav_logo img{
+    margin-left: -70px;
+  }
   }
   
