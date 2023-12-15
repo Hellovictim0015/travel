@@ -20,13 +20,13 @@
    * colors
    */
 
-  --united-nations-blue: hsl(99, 95%, 24%);
-  --bright-navy-blue: hsl(99, 95%, 24%);
+  --united-nations-blue: hsl(214, 56%, 58%);
+  --bright-navy-blue: hsl(214, 57%, 51%);
   --spanish-gray: hsl(0, 0%, 60%);
   --black-coral: hsl(225, 8%, 42%);
   --oxford-blue: hsl(208, 97%, 12%);
-  --yale-blue: hsl(99, 95%, 24%);
-  --blue-ncs: hsl(99, 95%, 24%);
+  --yale-blue: hsl(214, 72%, 33%);
+  --blue-ncs: hsl(197, 100%, 36%);
   --gunmetal: hsl(206, 34%, 20%);
   --gainsboro: hsl(0, 0%, 88%);
   --cultured: hsl(0, 0%, 98%);
@@ -147,10 +147,6 @@ body { background: var(--white); }
   background: var(--bright-navy-blue);
   border-color: var(--bright-navy-blue);
 }
-.btn-primary a{
-  text-decoration: none;
-  color: white;
-}
 
 .btn-primary:is(:hover, :focus) {
   background: var(--yale-blue);
@@ -244,14 +240,13 @@ body { background: var(--white); }
   align-items: center;
 }
 
-.helpline-box .wrapper{ font-size: 0.5rem;color: white; }
+.helpline-box .wrapper { display: none; }
 
 .helpline-box .icon-box {
   background: var(--bright-navy-blue);
   padding: 6px;
   border-radius: 50%;
   color: var(--white);
-  width: 38%;
 }
 
 .helpline-box .icon-box ion-icon { --ionicon-stroke-width: 40px; }
@@ -282,10 +277,10 @@ body { background: var(--white); }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 25px;
+  padding-block: 15px;
 }
 
-.social-list{
+.social-list {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -332,7 +327,7 @@ body { background: var(--white); }
   padding: 40px 15px;
 }
 
-.logo img{width: 50px;}
+.navbar-top .logo img { width: 150px; }
 
 .nav-close-btn {
   font-size: 20px;
@@ -448,9 +443,9 @@ body { background: var(--white); }
 .tour-search .btn {
   width: 100%;
   --border-width: 1px;
-  border-radius: 5px;
   font-weight: var(--fw-600);
   margin-top: 35px;
+  border-radius: 5px;
 }
 
 
